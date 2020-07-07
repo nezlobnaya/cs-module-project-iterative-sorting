@@ -1,6 +1,8 @@
 def linear_search(arr, target):
     # Your code here
-
+    for index,item in enumerate(arr):
+        if item == target:
+            return index
 
     return -1   # not found
 
@@ -24,6 +26,7 @@ def binary_search(arr, target):
 
     return -1  # not found
 
-my_list = [1, 3, 5, 7, 9]
+my_list = [-6, 1, 3, 5, 7, 9]
 
 print(binary_search(my_list, 3))
+print(linear_search(my_list, -6))
